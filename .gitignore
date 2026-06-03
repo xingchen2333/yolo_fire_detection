@@ -1,0 +1,47 @@
+# Reports and thesis documents
+高级软件工程期末报告.md
+高级软件工程期末报告.docx
+202125310321-彭梓瑞-基于深度学习的多场景火灾检测.docx
+
+# Dependency directories
+node_modules/
+**/node_modules/
+
+# Dataset and local sample media
+yolo_fire_detection_flask/data/*
+!yolo_fire_detection_flask/data/fire_dataset/
+yolo_fire_detection_flask/data/fire_dataset/*
+!yolo_fire_detection_flask/data/fire_dataset/data.yaml
+
+# Build outputs
+dist/
+target/
+build/
+out/
+*.class
+
+# Runtime outputs and uploaded files
+yolo_fire_detection_flask/runs/
+yolo_fire_detection_springboot/files/
+
+# Local tools and editor metadata
+ffmpeg-7.1-full_build/
+.idea/
+.vscode/
+*.iml
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# OS and logs
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

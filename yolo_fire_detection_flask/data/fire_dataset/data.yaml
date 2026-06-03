@@ -1,0 +1,9 @@
+path: .
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: fire_smoke
+  1: nofire_smoke
+  2: fire_nosmoke

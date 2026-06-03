@@ -13,13 +13,27 @@
 │   └── main.py                      # Flask API 服务
 ├── yolo_fire_detection_springboot/  # Spring Boot 后端，负责用户、文件、记录等业务
 ├── yolo_fire_detection_vue/         # Vue3 前端页面
-├── yolo_detect.sql                  # MySQL 数据库表结构
-└── 202125310321-彭梓瑞-基于深度学习的多场景火灾检测.docx
+└── yolo_detect.sql                  # MySQL 数据库表结构
 ```
 
 ## 数据集
 
-数据集不随 GitHub 仓库上传。复现实验时，请将数据集放到 `yolo_fire_detection_flask/data/fire_dataset`，采用 YOLO 标注格式，包含图像和标签两部分：
+数据集不随 GitHub 仓库上传，需在本地放置到 `yolo_fire_detection_flask/data/fire_dataset` 目录下。数据集采用 YOLO 标注格式，包含图像和标签两部分，建议保持如下目录结构：
+
+```text
+yolo_fire_detection_flask/data/fire_dataset/
+├── data.yaml
+├── images/
+│   ├── train/
+│   ├── val/
+│   └── test/
+└── labels/
+    ├── train/
+    ├── val/
+    └── test/
+```
+
+本项目实验使用的数据集规模如下：
 
 - 训练集：4509 张
 - 验证集：501 张

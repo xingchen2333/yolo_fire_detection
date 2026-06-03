@@ -18,7 +18,7 @@
 
 ## 数据集
 
-数据集不随 GitHub 仓库上传，需在本地放置到 `yolo_fire_detection_flask/data/fire_dataset` 目录下。数据集采用 YOLO 标注格式，包含图像和标签两部分，建议保持如下目录结构：
+数据集已放置在 `yolo_fire_detection_flask/data/fire_dataset` 目录下，采用 YOLO 标注格式，包含图像和标签两部分，目录结构如下：
 
 ```text
 yolo_fire_detection_flask/data/fire_dataset/
@@ -90,7 +90,7 @@ npm run dev
 
 ## 训练说明
 
-仓库保留了数据集配置文件 `yolo_fire_detection_flask/data/fire_dataset/data.yaml`。复现实验时可使用 YOLOv8s 官方预训练权重，并参考以下训练参数：输入尺寸 `640x640`，训练轮次 `300`，批次大小 `24`，优化器 `SGD`，初始学习率 `0.01`，最终学习率 `0.0001`，Mosaic 概率 `0.5`。
+数据集配置文件位于 `yolo_fire_detection_flask/data/fire_dataset/data.yaml`。复现实验时可使用 YOLOv8s 官方预训练权重，并参考以下训练参数：输入尺寸 `640x640`，训练轮次 `300`，批次大小 `24`，优化器 `SGD`，初始学习率 `0.01`，最终学习率 `0.0001`，Mosaic 概率 `0.5`。
 
 ```bash
 cd yolo_fire_detection_flask
